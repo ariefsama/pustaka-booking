@@ -7,7 +7,7 @@
   <title>latihan2</title>
 </head>
 <body>
-<form action="<?= base_url('index.php/Latihan2/cetak'); ?>" method="post">
+<form action="<?= base_url('index.php/Matakuliah/cetak'); ?>" method="post">
   <table border="1%">
     <tr>
       <th colspan="3">

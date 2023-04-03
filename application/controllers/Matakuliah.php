@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Latihan2 extends CI_Controller {
+class Matakuliah extends CI_Controller {
 
     public function index()
     {
         $this->load->helper('url');
-        $this->load->view('input_matakuliah.php');
+        $this->load->view('view-form-matakuliah');
     }
 
     public function cetak()
@@ -52,7 +52,7 @@ class Latihan2 extends CI_Controller {
                 //membuat object untuk parsing data ke view yg dituju
                 $data = ['kode' => $kodeMataKuliah,'nama' => $namaMataKuliah,'sks' => $sksMataKuliah,'unggulan' => $sksUnggulan,'range' => $BobotNilai,'status' => $Status];
                 //kirim ke view
-                $this->load->view('output_matakuliah', $data);
+                $this->load->view('view-data-matakuliah', $data);
             }
         }
     }
